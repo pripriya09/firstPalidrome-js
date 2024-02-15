@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+</body>
+</html>
+<script> 
+//    find firstPalidrome word.........?
+
+const arr =["abc","car","ada","racecar","look"]
+
+function firstPalidrome(words){
+    let output ="";
+    for (let  i= 0;  i<words.length; i++) {
+      const right = words[i]
+      const reverse =words[i].split("").reverse().join("")
+      if(right === reverse){
+        output = right
+     break; 
+      }  
+    }
+    return output
+}
+console.log(firstPalidrome(arr));
+
+
+
+
+
+
+
+
+
+// to find all Palidrome words ...........?
+
+
+// const array =["abc","level","car","ada","racecar","civic","look","madam"]
+
+// function firstPalidrome(words){
+//     let output =[];
+//     for (let  i= 0;  i<words.length; i++) {
+//       const right = words[i]
+//       const reverse = right.split("").reverse().join("")
+//       if(right === reverse){
+//         output.push(right);
+
+       
+//       }  
+//     }
+//     return output
+   
+
+// }
+// console.log(firstPalidrome(array))
+
+</script>
